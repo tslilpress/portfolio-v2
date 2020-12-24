@@ -1,0 +1,29 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    color: $color-black;
+    line-height: 1.7rem;
+    letter-spacing: .1rem;
+}
+
+.heading-primary {
+    font-weight: 800;
+    font-size: 9rem;
+    backface-visibility: hidden;
+    margin-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+
+
+    &--top {
+        margin-bottom: 7rem;
+        animation: moveInTop 1.2s ease-out;
+    }
+
+    &--side {
+        animation: moveInRight 1.2s ease-out;
+    }
+
+    &--line {
+        background-color: $color-baby-purple;
+    }
+}

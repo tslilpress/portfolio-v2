@@ -1,0 +1,12 @@
+.line {
+    height: 5rem;
+    width: 50rem;
+    position: absolute;
+    display: flex;
+    align-self: flex-start;
+    z-index: -10;
+    
+    &--purple {
+        background-color: $color-baby-purple;
+    }
+}
