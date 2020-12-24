@@ -1,18 +1,14 @@
 .header {
     height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    background-color: $color-white-gray;
     
 
-    &__background-left {
-        background-color: rgba($color-baby-purple, 0.4);
-        width: 70%;
-    }
-
-    &__background-right {
-        background-color: $color-baby-blue-light;
-        width: 30%;
-    }
+    // &__background-right {
+    //     background-color: rgba($color-baby-blue-dark, 0.8);
+    //     width: 30%;
+    // }
     
 
     &__text-box {

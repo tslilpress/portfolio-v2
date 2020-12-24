@@ -1,0 +1,61 @@
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    
+    
+    &__checkbox {
+        display: none;
+    }
+
+    &__button {
+        background-color: $color-white-gray;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 5px;
+        @include buttonBoxShadow;
+        position: fixed;
+        margin: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__nav {
+        position: fixed;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__item {
+        margin: 1rem;
+    }
+
+    &__icon {
+        margin-top: 2.5rem;
+        &,
+        &::before,
+        &::after {
+            position: relative;
+            width: 3rem;
+            height: 2px;
+            background-color: $color-resume-purple;
+        }
+        
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            transition: all .2s;
+            display: flex;
+        }
+
+        &::before { top: -.8rem; }
+        &::after { top: .8rem; }
+        
+    }
+}

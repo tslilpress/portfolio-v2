@@ -37,11 +37,53 @@
     }
 
     80% {
-        transform: translateY(-1.2rem)
+        transform: translateY(-1.2rem);
     }
 
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes textScramble {
+    0% {
+        opacity: 0;
+        font-size: 4rem;
+        letter-spacing: 3rem;
+        transform: translateX(20rem);
+        
+    }
+
+    20% {
+        font-size: 3.8rem;
+        letter-spacing: 2.8rem;
+    }
+
+    40% {
+        font-size: 3.3rem;
+        letter-spacing: 2.3rem;
+    }
+
+
+    60% {
+        font-size: 3rem;
+        letter-spacing: 2rem;
+    }
+
+    80% {
+        font-size: 2.5rem;
+        letter-spacing: 1.2rem;
+    }
+
+    90% {
+        transform: translateX(-3rem);
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 2rem;
+        letter-spacing: .3rem;
+        transform: translateX(0);
     }
 }

@@ -1,5 +1,5 @@
 body {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: $color-black;
     line-height: 1.7rem;
     letter-spacing: .1rem;
@@ -22,8 +22,13 @@ body {
     &--side {
         animation: moveInRight 1.2s ease-out;
     }
+}
 
-    &--line {
-        background-color: $color-baby-purple;
-    }
+.summary {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    line-height: 3rem;
+    animation: textScramble 1s ease-out;
+
 }

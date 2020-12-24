@@ -2,38 +2,33 @@
     &,
     &:link,
     &:visited {
+        width: 15rem;
+        background-color: $color-white-gray;
         text-transform: uppercase;
         text-decoration: none;
-        box-shadow: -.6rem -.6rem 1rem rgba($color-white, 0.6),
-          .3rem .3rem 1rem rgba($color-black, 0.2);
+        text-align: center;
+        @include buttonBoxShadow;
         padding: 1.2rem;
         border-radius: 1.3rem;
         font-size: 1.4rem;
         font-weight: 500;
-        transition: all .2s;
+        transition: all .2s ease-in;
+        margin-top: 2rem;
+        display: flex;
+        color: $color-resume-purple;
     }
 
     &:hover {
         transform: translateY(-.1rem);
         opacity: 0.6;
-        box-shadow: -.8rem -.8rem 1rem rgba($color-white, 0.6),
-          .8rem .8rem 1rem rgba($color-black, 0.2);
+        @include buttonBoxShadow;
     }
 
     &:active,
     &:focus {
         outline: none;
-        box-shadow: inset -.2rem -.2rem 1rem rgba($color-white, 0.8),
-          inset .3rem .3rem 1rem rgba($color-black, 0.2);
-    }
-
-    &--purple {
-        background-color: ($color-baby-purple, 0.4);
-        color: $color-black;
-
-        &::after {
-            background-color: $color-baby-purple;
-        }
+        @include buttonBoxShadowActive;
+        color: $color-resume-green;
     }
 
     &--animated {
