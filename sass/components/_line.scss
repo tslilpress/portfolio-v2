@@ -1,12 +1,15 @@
 .line {
-    height: 5rem;
-    width: 50rem;
+    height: 3rem;
+    width: 60rem;
     position: absolute;
     display: flex;
     align-self: flex-start;
-    z-index: -10;
+    z-index: -1000;
     
-    &--purple {
-        background-color: $color-baby-purple;
+    
+    &--pink {
+        background-color: rgba($color-resume-pink, 0.6);
+        left: 0;
+        animation: lineFaeIn 1s ease-in;
     }
 }

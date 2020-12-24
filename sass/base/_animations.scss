@@ -49,30 +49,30 @@
 @keyframes textScramble {
     0% {
         opacity: 0;
-        font-size: 4rem;
+        font-size: 4.2rem;
         letter-spacing: 3rem;
         transform: translateX(20rem);
         
     }
 
     20% {
-        font-size: 3.8rem;
+        font-size: 4rem;
         letter-spacing: 2.8rem;
     }
 
     40% {
-        font-size: 3.3rem;
+        font-size: 3.8rem;
         letter-spacing: 2.3rem;
     }
 
 
     60% {
-        font-size: 3rem;
+        font-size: 3.5rem;
         letter-spacing: 2rem;
     }
 
     80% {
-        font-size: 2.5rem;
+        font-size: 3.2rem;
         letter-spacing: 1.2rem;
     }
 
@@ -82,8 +82,18 @@
 
     100% {
         opacity: 1;
-        font-size: 2rem;
+        font-size: 3rem;
         letter-spacing: .3rem;
         transform: translateX(0);
+    }
+}
+
+@keyframes lineFaeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.6;
     }
 }

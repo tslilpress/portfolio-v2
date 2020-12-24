@@ -8,8 +8,7 @@ body {
 .heading-primary {
     font-weight: 900;
     font-size: 9rem;
-    backface-visibility: hidden;
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
 
@@ -28,7 +27,8 @@ body {
     margin-bottom: 1rem;
     font-size: 3rem;
     letter-spacing: .3rem;
-    line-height: 3rem;
+    line-height: 4rem;
+    font-weight: 200;
     animation: textScramble 1s ease-out;
 
 }
