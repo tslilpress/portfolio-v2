@@ -87,7 +87,7 @@ body {
   letter-spacing: .1rem; }
 
 .heading-primary {
-  font-weight: 800;
+  font-weight: 900;
   font-size: 9rem;
   backface-visibility: hidden;
   margin-bottom: 7rem;
@@ -101,7 +101,7 @@ body {
 
 .summary {
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 3rem;
   letter-spacing: .3rem;
   line-height: 3rem;
   animation: textScramble 1s ease-out; }
@@ -159,7 +159,8 @@ body {
 
 .navigation {
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  flex-direction: row; }
   .navigation__checkbox {
     display: none; }
   .navigation__button {
@@ -173,13 +174,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    cursor: pointer; }
+    cursor: pointer;
+    z-index: 2000; }
   .navigation__nav {
-    position: fixed; }
+    position: fixed;
+    background-color: #07e8ff;
+    margin-top: 4rem;
+    margin-right: 10rem; }
   .navigation__list {
     list-style: none;
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    font-size: 3rem;
+    font-weight: 100; }
   .navigation__item {
     margin: 1rem; }
   .navigation__icon {
@@ -198,3 +205,17 @@ body {
       top: -.8rem; }
     .navigation__icon::after {
       top: .8rem; }
+  .navigation__button:hover .navigation__icon::before {
+    top: -1rem; }
+  .navigation__button:hover .navigation__icon::after {
+    top: 1rem; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon {
+    background-color: transparent; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+    background-color: #07e8ff;
+    top: 0;
+    transform: rotate(135deg); }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+    background-color: #07e8ff;
+    top: 0;
+    transform: rotate(-135deg); }

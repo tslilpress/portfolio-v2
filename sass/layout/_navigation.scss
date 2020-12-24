@@ -1,6 +1,7 @@
 .navigation {
     display: flex;
     justify-content: flex-end;
+    flex-direction: row;
     
     
     &__checkbox {
@@ -19,16 +20,24 @@
         flex-direction: column;
         align-items: center;
         cursor: pointer;
+        z-index: 2000;
     }
 
     &__nav {
         position: fixed;
+        background-color: $color-resume-blue;
+        margin-top: 4rem;
+        margin-right: 10rem;
+
+
     }
 
     &__list {
         list-style: none;
         display: flex;
         flex-direction: row;
+        font-size: 3rem;
+        font-weight: 100;
     }
 
     &__item {
@@ -58,4 +67,30 @@
         &::after { top: .8rem; }
         
     }
+
+    &__button:hover &__icon::before {
+        top: -1rem;
+    }
+
+    &__button:hover &__icon::after {
+        top: 1rem;
+    }
+
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent;
+    }
+
+    &__checkbox:checked + &__button &__icon::before {
+        background-color: $color-resume-blue;
+        top:0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__button &__icon::after {
+        background-color: $color-resume-blue;
+        top:0;
+        transform: rotate(-135deg);
+    }
+
+
 }
