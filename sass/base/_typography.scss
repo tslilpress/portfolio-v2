@@ -12,6 +12,9 @@ body {
     display: flex;
     flex-direction: column;
 
+    &__main {
+        font-size: 15rem;
+    }
 
     &--top {
         margin-bottom: 8rem;
@@ -30,4 +33,11 @@ body {
     font-weight: 200;
     animation: textScramble 1s ease-out;
 
+}
+
+.paragraph {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-right: 10rem;
+    line-height: 3rem;
 }

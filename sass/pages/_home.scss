@@ -1,4 +1,10 @@
 .section-about {
-    background-color: $color-white-gray;
-    margin-top: 5rem;
+    height: 90vh;
+    
+    &__container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
