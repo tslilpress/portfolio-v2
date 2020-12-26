@@ -1,10 +1,26 @@
 .section-about {
-    height: 90vh;
     
     &__container {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
+    }
+}
+
+.section-skills {
+    
+    &__container {
+        display: flex;
+        flex-direction: column;
+        
+        &--boxes {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 5rem;
+            
+        }
     }
 }

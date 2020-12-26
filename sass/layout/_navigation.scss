@@ -28,9 +28,9 @@
         background-color: rgba($color-resume-blue,0.7);
         margin-top: 3.3rem;
         margin-right: 9rem;
+        width: 55rem;
         visibility: hidden;
         opacity: 0;
-
     }
 
     &__list {
@@ -39,10 +39,27 @@
         flex-direction: row;
         font-size: 3rem;
         font-weight: 100;
+        align-items: center;
+        justify-content: space-between;
     }
 
     &__item {
         margin: 1rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $color-black;
+            transition: all .6s;
+        }
+
+        &:hover,
+        &:active {
+            font-weight: 800;
+        }
+        
     }
 
     &__checkbox:checked ~ &__nav {
@@ -70,8 +87,8 @@
             display: flex;
         }
 
-        &::before { top: -.8rem; }
-        &::after { top: .8rem; }
+        &::before { top: -.7rem; }
+        &::after { top: .7rem; }
         
     }
 
