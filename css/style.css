@@ -52,22 +52,22 @@ $breakpoint arguement choices:
     transform: translateX(20rem); }
   20% {
     font-size: 4rem;
-    letter-spacing: 2.8rem; }
+    letter-spacing: 2.6rem; }
   40% {
     font-size: 3.8rem;
-    letter-spacing: 2.3rem; }
+    letter-spacing: 2rem; }
   60% {
     font-size: 3.5rem;
-    letter-spacing: 2rem; }
+    letter-spacing: 1.8rem; }
   80% {
     font-size: 3.2rem;
-    letter-spacing: 1.2rem; }
+    letter-spacing: 1rem; }
   90% {
     transform: translateX(-3rem); }
   100% {
     opacity: 1;
     font-size: 3rem;
-    letter-spacing: .3rem;
+    letter-spacing: .1rem;
     transform: translateX(0); } }
 
 @keyframes lineFaeIn {
@@ -75,6 +75,12 @@ $breakpoint arguement choices:
     opacity: 0; }
   100% {
     opacity: 0.6; } }
+
+@keyframes navFadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 *,
 *::after,
@@ -87,6 +93,9 @@ html {
   font-size: 62.5%; }
 
 body {
+  background-color: #f3f0f1; }
+
+body {
   font-family: 'Montserrat', sans-serif;
   color: #000;
   line-height: 1.7rem;
@@ -94,12 +103,12 @@ body {
 
 .heading-primary {
   font-weight: 900;
-  font-size: 9rem;
-  margin-bottom: 5rem;
+  font-size: 11rem;
+  margin-bottom: 6rem;
   display: flex;
   flex-direction: column; }
   .heading-primary--top {
-    margin-bottom: 7rem;
+    margin-bottom: 8rem;
     animation: moveInTop 1.2s ease-out; }
   .heading-primary--side {
     animation: moveInRight 1.2s ease-out; }
@@ -107,7 +116,6 @@ body {
 .summary {
   margin-bottom: 1rem;
   font-size: 3rem;
-  letter-spacing: .3rem;
   line-height: 4rem;
   font-weight: 200;
   animation: textScramble 1s ease-out; }
@@ -156,8 +164,7 @@ body {
 .header {
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  background-color: #f3f0f1; }
+  flex-direction: column; }
   .header__text-box {
     height: 6rem;
     display: flex;
@@ -183,7 +190,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    cursor: pointer; }
+    cursor: pointer;
+    animation: navFadeIn 1.2s ease-in; }
   .navigation__nav {
     position: fixed;
     background-color: rgba(7, 232, 255, 0.7);
@@ -233,3 +241,7 @@ body {
     background-color: #07e8ff;
     top: 0;
     transform: rotate(-135deg); }
+
+.section-about {
+  background-color: #f3f0f1;
+  margin-top: 5rem; }
