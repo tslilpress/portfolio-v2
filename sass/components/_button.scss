@@ -2,7 +2,7 @@
     &,
     &:link,
     &:visited {
-        width: 15rem;
+        width: 16rem;
         background-color: $color-white-gray;
         text-transform: uppercase;
         text-decoration: none;
@@ -14,7 +14,7 @@
         font-weight: 500;
         transition: all .2s ease-in;
         margin-top: 2rem;
-        display: flex;
+        display: inline-block;
         color: $color-resume-purple;
     }
 

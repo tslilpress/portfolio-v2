@@ -22,7 +22,7 @@ $(document).ready(function() {
         
         scrollLink.each(function() {
             console.log(scrollBarLocation)
-            const sectionOffset = $(this.hash).offset().top - 72
+            const sectionOffset = $(this.hash).offset().top - 100
             if(sectionOffset <= scrollBarLocation) {
                 $(this).parent().addClass('active')
                 $(this).parent().siblings().removeClass('active')

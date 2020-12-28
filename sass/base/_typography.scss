@@ -7,7 +7,7 @@ body {
 
 .heading-primary {
     font-weight: 900;
-    font-size: 11rem;
+    font-size: 12rem;
     margin-bottom: 6rem;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@ body {
     }
 
     &--top {
-        margin-bottom: 8rem;
+        margin-bottom: 9rem;
         animation: moveInTop 1.2s ease-out;
     }
 
@@ -45,6 +45,7 @@ body {
     font-weight: 200;
     margin-right: 10rem;
     line-height: 3rem;
+    // border: 1px solid red;
 
     &__skills {
         line-height: 2.5rem;
