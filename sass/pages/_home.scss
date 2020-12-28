@@ -1,5 +1,6 @@
 .section-about {
-    
+    height: 100vh;
+
     &__container {
         display: flex;
         flex-direction: row-reverse;
@@ -9,7 +10,8 @@
 }
 
 .section-skills {
-    
+    height: 100vh;
+
     &__container {
         display: flex;
         flex-direction: column;
