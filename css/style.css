@@ -44,39 +44,13 @@ $breakpoint arguement choices:
     opacity: 1;
     transform: translateY(0); } }
 
-@keyframes textScramble {
-  0% {
-    opacity: 0;
-    font-size: 4.2rem;
-    letter-spacing: 3rem;
-    transform: translateX(20rem); }
-  20% {
-    font-size: 4rem;
-    letter-spacing: 2.6rem; }
-  40% {
-    font-size: 3.8rem;
-    letter-spacing: 2rem; }
-  60% {
-    font-size: 3.5rem;
-    letter-spacing: 1.8rem; }
-  80% {
-    font-size: 3.2rem;
-    letter-spacing: 1rem; }
-  90% {
-    transform: translateX(-3rem); }
-  100% {
-    opacity: 1;
-    font-size: 3rem;
-    letter-spacing: .1rem;
-    transform: translateX(0); } }
-
 @keyframes lineFaeIn {
   0% {
     opacity: 0; }
   100% {
     opacity: 0.6; } }
 
-@keyframes navFadeIn {
+@keyframes FadeIn {
   0% {
     opacity: 0; }
   100% {
@@ -93,6 +67,7 @@ html {
   font-size: 62.5%; }
 
 body {
+  box-sizing: border-box;
   background-color: #f3f0f1; }
 
 body {
@@ -103,16 +78,17 @@ body {
 
 .heading-primary {
   font-weight: 900;
-  font-size: 12rem;
+  font-size: 17rem;
   margin-bottom: 6rem;
   display: flex;
   flex-direction: column; }
   .heading-primary__main {
     font-size: 15rem; }
   .heading-primary--top {
-    margin-bottom: 9rem;
+    margin-bottom: 14rem;
     animation: moveInTop 1.2s ease-out; }
   .heading-primary--side {
+    margin-bottom: 3rem;
     animation: moveInRight 1.2s ease-out; }
 
 .heading-tertiary {
@@ -123,8 +99,8 @@ body {
   margin-bottom: 1rem;
   font-size: 3rem;
   line-height: 4rem;
-  font-weight: 200;
-  animation: textScramble 1s ease-out; }
+  font-weight: 100;
+  animation: FadeIn 1.4s ease-in; }
 
 .paragraph {
   font-size: 2rem;
@@ -179,8 +155,11 @@ body {
 .btn--animated {
   animation: moveInBttm 1.2s ease-out; }
 
+.btn--header {
+  display: flex; }
+
 .line {
-  height: 4rem;
+  height: 6rem;
   width: 60rem;
   position: absolute;
   display: flex;
@@ -207,13 +186,13 @@ body {
 
 .header {
   height: 95vh;
-  display: flex;
-  flex-direction: column; }
+  display: flex; }
   .header__text-box {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin: 10rem 20rem 0 10rem;
+    align-self: center;
+    justify-content: space-between;
+    margin-left: 10rem;
     z-index: 10; }
 
 .navigation {
@@ -234,7 +213,7 @@ body {
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    animation: navFadeIn 1.2s ease-in; }
+    animation: FadeIn 1.2s ease-in; }
   .navigation__nav {
     position: fixed;
     background-color: rgba(7, 232, 255, 0.7);

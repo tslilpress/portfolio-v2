@@ -1,14 +1,13 @@
 .header {
     height: 95vh;
     display: flex;
-    flex-direction: column;
-    // border: 1px solid black;
     
     &__text-box {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        margin: 10rem 20rem 0 10rem;
+        align-self: center;
+        justify-content: space-between;
+        margin-left: 10rem;
         z-index: 10;
     }
 }

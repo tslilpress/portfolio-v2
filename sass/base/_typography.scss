@@ -7,7 +7,7 @@ body {
 
 .heading-primary {
     font-weight: 900;
-    font-size: 12rem;
+    font-size: 17rem;
     margin-bottom: 6rem;
     display: flex;
     flex-direction: column;
@@ -17,11 +17,12 @@ body {
     }
 
     &--top {
-        margin-bottom: 9rem;
+        margin-bottom: 14rem;
         animation: moveInTop 1.2s ease-out;
     }
 
     &--side {
+        margin-bottom: 3rem;
         animation: moveInRight 1.2s ease-out;
     }
 }
@@ -35,8 +36,8 @@ body {
     margin-bottom: 1rem;
     font-size: 3rem;
     line-height: 4rem;
-    font-weight: 200;
-    animation: textScramble 1s ease-out;
+    font-weight: 100;
+    animation: FadeIn 1.4s ease-in;
 
 }
 

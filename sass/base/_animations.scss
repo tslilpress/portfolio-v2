@@ -46,47 +46,47 @@
     }
 }
 
-@keyframes textScramble {
-    0% {
-        opacity: 0;
-        font-size: 4.2rem;
-        letter-spacing: 3rem;
-        transform: translateX(20rem);
+// @keyframes textScramble {
+//     0% {
+//         opacity: 0;
+//         // font-size: 4.2rem;
+//         // letter-spacing: 3rem;
+//         // transform: translateX(20rem);
         
-    }
+//     }
 
-    20% {
-        font-size: 4rem;
-        letter-spacing: 2.6rem;
-    }
+//     // 20% {
+//     //     font-size: 4rem;
+//     //     letter-spacing: 2.6rem;
+//     // }
 
-    40% {
-        font-size: 3.8rem;
-        letter-spacing: 2rem;
-    }
+//     // 40% {
+//     //     font-size: 3.8rem;
+//     //     letter-spacing: 2rem;
+//     // }
 
 
-    60% {
-        font-size: 3.5rem;
-        letter-spacing: 1.8rem;
-    }
+//     // 60% {
+//     //     font-size: 3.5rem;
+//     //     letter-spacing: 1.8rem;
+//     // }
 
-    80% {
-        font-size: 3.2rem;
-        letter-spacing: 1rem;
-    }
+//     // 80% {
+//     //     font-size: 3.2rem;
+//     //     letter-spacing: 1rem;
+//     // }
 
-    90% {
-        transform: translateX(-3rem);
-    }
+//     // 90% {
+//     //     transform: translateX(-3rem);
+//     // }
 
-    100% {
-        opacity: 1;
-        font-size: 3rem;
-        letter-spacing: .1rem;
-        transform: translateX(0);
-    }
-}
+//     100% {
+//         opacity: 1;
+//         // font-size: 3rem;
+//         // letter-spacing: .1rem;
+//         // transform: translateX(0);
+//     }
+// }
 
 @keyframes lineFaeIn {
     0% {
@@ -98,7 +98,7 @@
     }
 }
 
-@keyframes navFadeIn {
+@keyframes FadeIn {
     0% {
         opacity: 0;
     }
