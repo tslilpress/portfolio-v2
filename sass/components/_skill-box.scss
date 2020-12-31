@@ -1,7 +1,15 @@
 .skill-box {
-    width: 40%;
-    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10rem;
     text-align: center;
     // border: 1px solid green;
     
+    &--front {
+        align-self: flex-end;
+    }
+    
+    &--end {
+        align-self: flex-start;
+    }
 }

@@ -25,4 +25,18 @@
         height: 8rem;
         width: 80%;
     }
+
+    &--purple-front {
+        background-color: rgba($color-resume-purple, 0.6); 
+        height: 9rem;
+        width: 90%;
+        right: 0;
+    }
+
+    &--yellow-end {
+        background-color: rgba($color-resume-yellow, 0.6); 
+        height: 7rem;
+        width: 70%;
+        left: 0;
+    }
 }
