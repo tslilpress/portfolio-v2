@@ -21,6 +21,7 @@
         align-items: center;
         cursor: pointer;
         animation: FadeIn 1.2s ease-in;
+        z-index: 1000;
     }
 
     &__nav {

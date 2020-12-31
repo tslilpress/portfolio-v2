@@ -180,14 +180,15 @@ body {
     width: 80%; }
   .line--purple-front {
     background-color: rgba(164, 191, 228, 0.6);
-    height: 9rem;
+    height: 3rem;
     width: 90%;
     right: 0; }
   .line--yellow-end {
     background-color: rgba(248, 192, 0, 0.6);
-    height: 7rem;
+    height: 2rem;
     width: 70%;
-    left: 0; }
+    margin-top: 8rem;
+    left: 2; }
 
 .skill-box {
   display: flex;
@@ -228,7 +229,8 @@ body {
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    animation: FadeIn 1.2s ease-in; }
+    animation: FadeIn 1.2s ease-in;
+    z-index: 1000; }
   .navigation__nav {
     position: fixed;
     background-color: rgba(7, 232, 255, 0.7);
