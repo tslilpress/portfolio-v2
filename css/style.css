@@ -159,7 +159,7 @@ body {
   display: flex; }
 
 .line {
-  height: 6rem;
+  height: 9rem;
   width: 60rem;
   position: absolute;
   display: flex;
@@ -189,6 +189,11 @@ body {
     width: 70%;
     margin-top: 8rem;
     left: 2; }
+  .line--blue {
+    background-color: rgba(7, 232, 255, 0.6);
+    right: 0;
+    height: 8rem;
+    width: 80%; }
 
 .skill-box {
   display: flex;
@@ -316,3 +321,9 @@ body {
 .section-skills--icons {
   font-size: 10rem;
   margin-right: 3rem; }
+
+.section-portfolio__container {
+  display: flex; }
+
+.section-portfolio__container .heading-primary {
+  margin: 0 auto; }

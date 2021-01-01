@@ -1,5 +1,5 @@
 .line {
-    height: 6rem;
+    height: 9rem;
     width: 60rem;
     position: absolute;
     display: flex;
@@ -39,5 +39,12 @@
         width: 70%;
         margin-top: 8rem;
         left: 2;
+    }
+
+    &--blue {
+        background-color: rgba($color-resume-blue, 0.6);
+        right: 0;
+        height: 8rem;
+        width: 80%;
     }
 }
